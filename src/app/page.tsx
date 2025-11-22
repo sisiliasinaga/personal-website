@@ -10,7 +10,7 @@ export default function Home() {
         Outside of my work, I'm also a dancer and life-long musician. My goal is to use technology and art to create meaningful experiences.
       </p>
       <p>
-        This site is a mix of my research, personal projects, and creative work — feel free to explore!
+        This site is a mix of my research and personal projects — feel free to explore!
       </p>
     </section>
   );
