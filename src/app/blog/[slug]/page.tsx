@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getBlogPostBySlug, getBlogSlugs } from '@/lib/posts';
 
-type Props = { params: { slug: string } };
+type Props = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
     return getBlogSlugs().map((slug) => ({ slug }));

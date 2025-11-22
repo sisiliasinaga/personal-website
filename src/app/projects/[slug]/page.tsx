@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getPostBySlug, getPostSlugs } from '@/lib/posts';
 
-type Props = { params: { slug: string } };
+type Props = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
     return getPostSlugs().map((slug) => ({ slug }));
