@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Github, Linkedin, Music2 } from "lucide-react";
 
 export default function AboutPage() {
@@ -20,11 +19,11 @@ export default function AboutPage() {
                 </a>
             </div>
             <p>
-                Hi! I'm Sisilia — a technologist and creative with roots in computer science, mathematics, and the arts. I'm passionate about 
+                Hi! I&apos;m Sisilia — a technologist and creative with roots in computer science, mathematics, and the arts. I&apos;m passionate about 
                 blending technology and art to create meaningful experiences and enrich the communities around me.
             </p>
             <p>
-                I graduated from Northwestern University in 2022 (go 'cats!) with double majors in computer science and mathematics. During my time there,
+                I graduated from Northwestern University in 2022 (go &apos;cats!) with double majors in computer science and mathematics. During my time there,
                 I was an undergraduate researcher in the <a href="https://www.sralab.org/research/labs/assistive-robotics" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">
                 Assistive & Rehabilitation Robotics Laboratory (argallab)</a> under Professor <a href="https://www.argallab.northwestern.edu/people/brenna/" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">
                 Brenna Argall</a>. My work focused on using machine learning and statistical methods along with developing software for robotic 
