@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getBlogPostBySlug, getBlogSlugs } from '@/lib/posts';
 
-type Params = { slug: string };
 type Props = { params: { slug: string } };
 
 export async function generateStaticParams() {

@@ -39,25 +39,25 @@ export default function AboutPage() {
             </p>
             <p>
                 Creativity and the arts have always been core to who I am. I started playing the violin when I was 4 years old and continued to play in 
-                orchestras and ensembles throughout my life. While I don't currently play music professionally, I still enjoy writing and producing music 
+                orchestras and ensembles throughout my life. While I don&apos;t currently play music professionally, I still enjoy writing and producing music 
                 in my free time and writing very enthusiastic reviews about new releases and albums I like (you can read a few of these here). I also enjoy dancing, 
-                which I only started getting into during my time in college, and I'm currently a member of <a 
+                which I only started getting into during my time in college, and I&apos;m currently a member of <a 
                 href="https://www.instagram.com/newagetheatrics/?hl=en" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">New Age Theatrics</a>, a performing arts dance company located in the bay area. Check 
                 out our <a href="https://www.youtube.com/watch?v=ORIN3kuINkQ&pp=ygURbmV3IGFnZSB0aGVhdHJpY3M%3D" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">recent first-place set at World of Dance 
                 Bay Area 2025</a>!
             </p>
             <p>
-                While I've always loved pursuing my creative passions on the side, I always knew I wanted to do something more with these 
+                While I&apos;ve always loved pursuing my creative passions on the side, I always knew I wanted to do something more with these 
                 interests, which has led me to my current goal of exploring music technology and computational arts in a deeper, more research-driven way. 
-                Following a recent layoff from Microsoft, I'm currently seeking new job opportunities (please reach out if you have any leads!) — but more 
-                importantly, I'm also using this time to reconnect with my interdisciplinary interests in music, code, and interaction. I'm actively preparing 
+                Following a recent layoff from Microsoft, I&apos;m currently seeking new job opportunities (please reach out if you have any leads!) — but more 
+                importantly, I&apos;m also using this time to reconnect with my interdisciplinary interests in music, code, and interaction. I&apos;m actively preparing 
                 to apply to PhD programs in music technology and computational arts. My long-term goal is to build tools and experiences that empower artistic 
-                expression through technology — whether that's through audio software, immersive interfaces, or other creative tools.
+                expression through technology — whether that&apos;s through audio software, immersive interfaces, or other creative tools.
             </p>
             <p>
-                In the meantime, I'm developing creative personal projects, brushing up on DSP and audio programming, and looking to collaborate with others 
-                who share a passion for merging code, creativity, and culture. I'll be blogging about my experiences and thoughts on this journey here on 
-                this site. Feel free to follow along if you'd like, and I'm always open to chatting about new projects or ideas and meeting new people, 
+                In the meantime, I&apos;m developing creative personal projects, brushing up on DSP and audio programming, and looking to collaborate with others 
+                who share a passion for merging code, creativity, and culture. I&apos;ll be blogging about my experiences and thoughts on this journey here on 
+                this site. Feel free to follow along if you&apos;d like, and I&apos;m always open to chatting about new projects or ideas and meeting new people, 
                 especially other creatives and technologists (or both)!
             </p>
         </section>
