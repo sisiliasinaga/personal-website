@@ -5,7 +5,7 @@ export default function ContactPage() {
     <div className="max-w-xl mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold mb-2">Get in Touch</h1>
       <p className="text-muted-foreground mb-6">
-        Whether you want to collaborate, have questions, or just want to say hi — I'm always happy to connect!
+        Whether you want to collaborate, have questions, or just want to say hi — I&apos;m always happy to connect!
       </p>
 
       <div className="flex items-center gap-2 mb-6">
