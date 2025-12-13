@@ -1,0 +1,12 @@
+---
+title: "Audiovisual Violin: A Real-Time Performance System"
+date: "2025-11-26"
+excerpt: "A brief excerpt describing what this blog post is about."
+image: "/images/posts/audiovisual-violin/first-working-screenshot"
+tags: ["technical", "music", "graphics"]
+published: true
+---
+
+The audiovisual violin is a personal project that started from trying to have my laptop mic take in my violin audio and translate it into meaningful visuals, which eventually turned into a larger system. The system uses digital signal processing techniques to take in the audio through Unity. Then it extracts useful audio features from both the time and frequency domains, maps these to visual features, and renders these visual features in a Unity scene. The features I am currently calculating and using for the visual mappings are root-mean-square (RMS) amplitude, spectral centroid, onset density, pitch register, and spectral flatness (a proxy for harmonic stability). These features control a central orb instrument, particle trails, a reactive shader background, and camera motion. For example, high RMS amplitude results in brighter colors and a larger orb and more chaotic particle movement, while low RMS amplitude creates softer colors with a smaller orb and slower particle movement. The intention is to show how the emotion of the violin player can be expressed through both the piece being played and the accompanying visuals to create a full multisensory experience. The project sparked my deeper interest in audiovisual systems and interaction, the area I hope to pursue in graduate school. 
+<br />
+This project is continuously being developed, but you can find the existing code for it here: https://github.com/sisiliasinaga/audiovisual-violin
