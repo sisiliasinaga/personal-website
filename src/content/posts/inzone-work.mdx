@@ -1,12 +1,13 @@
 ---
 title: "InZone: Real-Time AI-Generated 3D Avatars"
 date: "2025-01-10"
-excerpt: "A brief excerpt describing what this blog post is about."
-image: "/images/posts/inzone-work/inzone-first-avatar"
+excerpt: "A novel 3D avatar generation pipeline using LLMs, Blender, and Unity"
+image: "/images/posts/inzone-work/inzone-first-avatar.png"
 tags: ["technical"]
 published: true
 ---
 
+<img src="/images/posts/inzone-work/inzone-first-avatar.png" alt="Example of an avatar" className="max-w-xs rounded-lg mx-auto my-4" /><br />
 InZone is a startup building a social network around AI and 3D avatars, and as the founding engineer for the 3D avatar system, I designed and developed a prototype for what this system may look like and am continuing to build upon this. The end goal is to have a user enter a text prompt of what kind of avatar they want, and the system will generate a 3D avatar based off of the given prompt. The current pipeline takes this text prompt, parses it using a large-language model (LLM) to turn the prompt into a more usable format, then feeds the reformatted prompt into an AI-powered 3D mesh generator that outputs the initial 3D avatar. This avatar is then put into a headless Blender instance, where a rig is applied to allow for movement and animation.
 <br />
 The purpose of using AI for these avatars is so that they are truly customizable to what the user wants and reflect the user’s own personal style and creativity. Most existing avatar systems in video games have predetermined avatar shapes and bodies, which makes customizability more limited. Future plans for the avatar system at the moment include allowing for modular assets and textures, more complicated rigging systems for more sophisticated movements, and incorporation of non-humanoid avatars into the system. Although this was built in an industry context, this work showed me how digital identity is a critical aspect of interactive systems, which I hope to explore further in academic and creative contexts as well.

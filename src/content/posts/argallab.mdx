@@ -1,18 +1,18 @@
 ---
-title: "Audio Shoulder Rest (ASR)"
+title: "Interface Usage Skills Test"
 date: "2025-01-05"
-excerpt: "A brief excerpt describing what this blog post is about."
+excerpt: "A rehabilitation application to assist clinicians"
 image: "/images/posts/argallab/multi-interfacing.jpeg"
-tags: ["technical", "music"]
+tags: ["technical"]
 published: true
 ---
 
 The Interface Usage Skills Test is a clinician-facing, open-source application to track mobility progress of stroke and spinal cord injury patients undergoing physical rehabilitation. The test consists of two tasks, command following and trajectory following, and the app calculates relevant features regarding the user’s ability to follow both tasks with a given interface controller.
-![Command following task](/images/posts/argallab/command-following1.JPG)
-![Trajectory following task](/images/posts/argallab/trajectory-following.png)
+<img src="/images/posts/argallab/command_following1.JPG" alt="Command following task" className="w-full rounded-lg my-4" /><br />
+<img src="/images/posts/argallab/trajectory_following.png" alt="Trajectory following task" className="w-full rounded-lg my-4" />
 <br />
 These features are then stored to the user’s profile, allowing clinicians to track a patient’s progress over time. 
 <br />
-Under the guidance of Prof. Brenna Argall at Northwestern University, I designed and built the full application using the Godot game engine to design the game/app mechanics, GDScript to build the frontend and app logic, and SQLite to store user data in the backend. The project showed me how important it is to account for human preferences and behaviors throughout the system design and engineering process. I was also co-author for a conference paper on the Interface Usage Skills Test published at the International Conference on Rehabilitative Robotics.
+Under the guidance of Prof. Brenna Argall at Northwestern University and Dr. Mahdieh Nejati Jevaremi, I designed and built the full application using the Godot game engine to design the game/app mechanics, GDScript to build the frontend and app logic, and SQLite to store user data in the backend. The project showed me how important it is to account for human preferences and behaviors throughout the system design and engineering process. I was also co-author for a conference paper on the Interface Usage Skills Test published at the International Conference on Rehabilitative Robotics.
 <br />
-The app and its corresponding code can also be found here: https://github.com/argallab/InterfaceUsageSkillsTest.git
+The app and its corresponding code can also be found <a href="https://github.com/argallab/InterfaceUsageSkillsTest.git" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">here</a>. You can also read the published conference paper <a href="/public/documents/posts/argallab/icorr2022_interface_usage_skill_measure.pdf" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800">here</a>.

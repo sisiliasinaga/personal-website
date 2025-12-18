@@ -1,12 +1,36 @@
 ---
 title: "Audiovisual Violin: A Real-Time Performance System"
 date: "2025-11-26"
-excerpt: "A brief excerpt describing what this blog post is about."
-image: "/images/posts/audiovisual-violin/first-working-screenshot"
+excerpt: "Prototype of mapping violin sounds to 3D visuals"
+image: "/images/posts/audiovisual-violin/first-working-screenshot.png"
 tags: ["technical", "music", "graphics"]
 published: true
 ---
 
 The audiovisual violin is a personal project that started from trying to have my laptop mic take in my violin audio and translate it into meaningful visuals, which eventually turned into a larger system. The system uses digital signal processing techniques to take in the audio through Unity. Then it extracts useful audio features from both the time and frequency domains, maps these to visual features, and renders these visual features in a Unity scene. The features I am currently calculating and using for the visual mappings are root-mean-square (RMS) amplitude, spectral centroid, onset density, pitch register, and spectral flatness (a proxy for harmonic stability). These features control a central orb instrument, particle trails, a reactive shader background, and camera motion. For example, high RMS amplitude results in brighter colors and a larger orb and more chaotic particle movement, while low RMS amplitude creates softer colors with a smaller orb and slower particle movement. The intention is to show how the emotion of the violin player can be expressed through both the piece being played and the accompanying visuals to create a full multisensory experience. The project sparked my deeper interest in audiovisual systems and interaction, the area I hope to pursue in graduate school. 
 <br />
-This project is continuously being developed, but you can find the existing code for it here: https://github.com/sisiliasinaga/audiovisual-violin
+Below is a comparison of the system at low energy and high energy:<br />
+<div className="flex flex-col md:flex-row gap-4 my-4">
+  <div className="flex-1">
+    <img src="/images/posts/audiovisual-violin/lowenergy.png" alt="Low energy" className="w-full rounded-lg" />
+    <p className="text-sm text-gray-600 mt-2 text-center">Low Energy</p>
+  </div>
+  <div className="flex-1">
+    <img src="/images/posts/audiovisual-violin/highenergy.png" alt="High energy" className="w-full rounded-lg" />
+    <p className="text-sm text-gray-600 mt-2 text-center">High Energy</p>
+  </div>
+</div>
+<br />
+Below is a comparison of the system while playing an open G string (low pitch) and open E string (high pitch):
+<div className="flex flex-col md:flex-row gap-4 my-4">
+    <div className="flex-1">
+        <img src="/images/posts/audiovisual-violin/lowpitch_openG.png" alt="Low pitch" className="w-full rounded-lg" />
+        <p className="text-sm text-gray-600 mt-2 text-center">Low Pitch</p>
+    </div>
+    <div className="flex-1">
+        <img src="/images/posts/audiovisual-violin/highpitch_openE.png" alt="High pitch" className="w-full rounded-lg" />
+        <p className="text-sm text-gray-600 mt-2 text-center">High Pitch</p>
+    </div>
+</div>
+<br />
+This project is continuously being developed, but you can find the existing code for it <a href="https://github.com/sisiliasinaga/audiovisual-violin" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors">here</a>.

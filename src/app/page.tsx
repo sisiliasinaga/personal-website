@@ -8,81 +8,119 @@ export default async function Home() {
   const projects = getAllPostsMeta();
 
   return (
-    <div className="space-y-16">
-      {/* About Section */}
-      <section className="space-y-6">
-        <h1 className="text-3xl font-bold">Hi, I&apos;m Sisilia!</h1>
-        <div className="mt-4 flex flex-col gap-2">
-          <a href="https://github.com/sisiliasinaga" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
-            <Github className="w-5 h-5" />
+    <div className="flex flex-col lg:h-[calc(100vh-8rem)] lg:min-h-0">
+      {/* Hero Section */}
+      <section className="flex-shrink-0 space-y-8 animate-fade-in-up mb-8">
+        <div className="space-y-4">
+          <h1 className="text-5xl md:text-6xl font-bold text-gradient animate-fade-in">
+            Hi, I&apos;m Sisilia!
+          </h1>
+          <p className="text-xl text-gray-600 max-w-2xl">
+            A technologist and creative blending code, music, and art to build meaningful experiences.
+          </p>
+        </div>
+        
+        <div className="flex flex-wrap gap-4">
+          <a 
+            href="https://github.com/sisiliasinaga" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 hover:bg-primary-50 border border-primary-100 hover:border-primary-300 text-gray-700 hover:text-primary-600 transition-all duration-200 hover:shadow-soft group"
+          >
+            <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
             <span>GitHub</span>
           </a>
-          <a href="https://www.linkedin.com/in/sisilia-sinaga-a34069123/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
-            <Linkedin className="w-5 h-5" />
+          <a 
+            href="https://www.linkedin.com/in/sisilia-sinaga-a34069123/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 hover:bg-primary-50 border border-primary-100 hover:border-primary-300 text-gray-700 hover:text-primary-600 transition-all duration-200 hover:shadow-soft group"
+          >
+            <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
             <span>LinkedIn</span>
           </a>
-          <a href="https://soundcloud.com/yourusername" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
-            <Music2 className="w-5 h-5" />
+          <a 
+            href="https://soundcloud.com/yourusername" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/80 hover:bg-primary-50 border border-primary-100 hover:border-primary-300 text-gray-700 hover:text-primary-600 transition-all duration-200 hover:shadow-soft group"
+          >
+            <Music2 className="w-5 h-5 group-hover:scale-110 transition-transform" />
             <span>SoundCloud</span>
           </a>
         </div>
-        <p>
-          Hi! I&apos;m Sisilia — a technologist and creative with roots in computer science, mathematics, and the arts. I&apos;m passionate about 
-          blending technology and art to create meaningful experiences and enrich the communities around me.
-        </p>
-        <p>
-          I graduated from Northwestern University in 2022 (go &apos;cats!) with double majors in computer science and mathematics. During my time there,
-          I was an undergraduate researcher in the <a href="https://www.sralab.org/research/labs/assistive-robotics" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">
-          Assistive & Rehabilitation Robotics Laboratory (argallab)</a> under Professor <a href="https://www.argallab.northwestern.edu/people/brenna/" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">
-          Brenna Argall</a>. My work focused on using machine learning and statistical methods along with developing software for robotic 
-          systems to improve the lives of stroke patients and patients with spinal cord injuries. You can learn more about one of the projects I contributed to <a 
-          href="https://arxiv.org/pdf/2203.10704" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">here</a>, which I also presented at the 2022 International Conference on Rehabilitation Robotics (ICORR). 
-        </p>
-        <p>
-          After college, I worked as a software engineer at Microsoft under Mixed Reality, where I was part of the development team for the 
-          Microsoft HoloLens 2 and the IVAS (Integrated Visual Augmentation System) program. During my time there, I explored 
-          the intersection of software, hardware, and human-computer interaction for both enterprise and government applications, helping to 
-          build immersive applications that seamlessly bridged physical and digital experiences. In 2023, I was honored to speak at the annual Grace Hopper 
-          Conference in Orlando, FL, where I helped lead a workshop on introductory game design for extended reality (XR).
-        </p>
-        <p>
-          Creativity and the arts have always been core to who I am. I started playing the violin when I was 4 years old and continued to play in 
-          orchestras and ensembles throughout my life. While I don&apos;t currently play music professionally, I still enjoy writing and producing music 
-          in my free time and writing very enthusiastic reviews about new releases and albums I like (you can read a few of these here). I also enjoy dancing, 
-          which I only started getting into during my time in college, and I&apos;m currently a member of <a 
-          href="https://www.instagram.com/newagetheatrics/?hl=en" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">New Age Theatrics</a>, a performing arts dance company located in the bay area. Check 
-          out our <a href="https://www.youtube.com/watch?v=ORIN3kuINkQ&pp=ygURbmV3IGFnZSB0aGVhdHJpY3M%3D" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">recent first-place set at World of Dance 
-          Bay Area 2025</a>!
-        </p>
-        <p>
-          While I&apos;ve always loved pursuing my creative passions on the side, I always knew I wanted to do something more with these 
-          interests, which has led me to my current goal of exploring music technology and computational arts in a deeper, more research-driven way. 
-          Following a recent layoff from Microsoft, I&apos;m currently seeking new job opportunities (please reach out if you have any leads!) — but more 
-          importantly, I&apos;m also using this time to reconnect with my interdisciplinary interests in music, code, and interaction. I&apos;m actively preparing 
-          to apply to PhD programs in music technology and computational arts. My long-term goal is to build tools and experiences that empower artistic 
-          expression through technology — whether that&apos;s through audio software, immersive interfaces, or other creative tools.
-        </p>
-        <p>
-          In the meantime, I&apos;m developing creative personal projects, brushing up on DSP and audio programming, and looking to collaborate with others 
-          who share a passion for merging code, creativity, and culture. I&apos;ll be blogging about my experiences and thoughts on this journey here on 
-          this site. Feel free to follow along if you&apos;d like, and I&apos;m always open to chatting about new projects or ideas and meeting new people, 
-          especially other creatives and technologists (or both)!
-        </p>
       </section>
 
-      {/* Projects Section */}
-      <section className="space-y-8">
-        <h2 className="text-3xl font-bold">Projects</h2>
-        <div className="grid gap-10">
-          {projects.length > 0 ? (
-            projects.map((project) => (
-              <PostCard key={project.slug} post={project} basePath="/projects" />
-            ))
-          ) : (
-            <p className="text-muted-foreground">No projects yet. Check back soon!</p>
-          )}
-        </div>
-      </section>
+      {/* Two Column Layout: About (Left) and Projects (Right) with Independent Scrolling */}
+      {/* On mobile, this will stack and scroll normally. On desktop, each column scrolls independently */}
+      <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 animate-fade-in-up lg:overflow-hidden lg:min-h-0" style={{ animationDelay: '0.1s' }}>
+        {/* About Section - Left - Scrollable on desktop */}
+        <section className="flex flex-col lg:overflow-hidden lg:min-h-0">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6 flex-shrink-0">About</h2>
+          <div className="flex-1 lg:overflow-y-auto lg:scrollbar-thin lg:pr-2 lg:-mr-2">
+            <div className="prose prose-lg max-w-none space-y-6 text-gray-700 leading-relaxed">
+              <p>
+                Hi! I&apos;m Sisilia — a technologist and creative with roots in computer science, mathematics, and the arts. I&apos;m passionate about 
+                blending technology and art to create meaningful experiences and enrich the communities around me.
+              </p>
+              <p>
+                I graduated from Northwestern University in 2022 (go &apos;cats!) with double majors in computer science and mathematics. During my time there,
+                I was an undergraduate researcher in the <a href="https://www.sralab.org/research/labs/assistive-robotics" className="text-primary-600 hover:text-primary-700 hover:underline transition-colors font-medium" target="_blank" rel="noopener noreferrer">
+                Assistive & Rehabilitation Robotics Laboratory (argallab)</a> under Professor <a href="https://www.argallab.northwestern.edu/people/brenna/" className="text-primary-600 hover:text-primary-700 hover:underline transition-colors font-medium" target="_blank" rel="noopener noreferrer">
+                Brenna Argall</a>. My work focused on using machine learning and statistical methods along with developing software for robotic 
+                systems to improve the lives of stroke patients and patients with spinal cord injuries. You can learn more about one of the projects I contributed to <a 
+                href="https://arxiv.org/pdf/2203.10704" className="text-primary-600 hover:text-primary-700 hover:underline transition-colors font-medium" target="_blank" rel="noopener noreferrer">here</a>, which I also presented at the 2022 International Conference on Rehabilitation Robotics (ICORR). 
+              </p>
+              <p>
+                After college, I worked as a software engineer at Microsoft under Mixed Reality, where I was part of the development team for the 
+                Microsoft HoloLens 2 and the IVAS (Integrated Visual Augmentation System) program. During my time there, I explored 
+                the intersection of software, hardware, and human-computer interaction for both enterprise and government applications, helping to 
+                build immersive applications that seamlessly bridged physical and digital experiences. In 2023, I was honored to speak at the annual Grace Hopper 
+                Conference in Orlando, FL, where I helped lead a workshop on introductory game design for extended reality (XR).
+              </p>
+              <p>
+                Creativity and the arts have always been core to who I am. I started playing the violin when I was 4 years old and continued to play in 
+                orchestras and ensembles throughout my life. While I don&apos;t currently play music professionally, I still enjoy writing and producing music 
+                in my free time and writing very enthusiastic reviews about new releases and albums I like (you can read a few of these here). I also enjoy dancing, 
+                which I only started getting into during my time in college, and I&apos;m currently a member of <a 
+                href="https://www.instagram.com/newagetheatrics/?hl=en" className="text-primary-600 hover:text-primary-700 hover:underline transition-colors font-medium" target="_blank" rel="noopener noreferrer">New Age Theatrics</a>, a performing arts dance company located in the bay area. Check 
+                out our <a href="https://www.youtube.com/watch?v=ORIN3kuINkQ&pp=ygURbmV3IGFnZSB0aGVhdHJpY3M%3D" className="text-primary-600 hover:text-primary-700 hover:underline transition-colors font-medium" target="_blank" rel="noopener noreferrer">recent first-place set at World of Dance 
+                Bay Area 2025</a>!
+              </p>
+              <p>
+                While I&apos;ve always loved pursuing my creative passions on the side, I always knew I wanted to do something more with these 
+                interests, which has led me to my current goal of exploring music technology and computational arts in a deeper, more research-driven way. 
+                Following a recent layoff from Microsoft, I&apos;m currently seeking new job opportunities (please reach out if you have any leads!) — but more 
+                importantly, I&apos;m also using this time to reconnect with my interdisciplinary interests in music, code, and interaction. I&apos;m actively preparing 
+                to apply to PhD programs in music technology and computational arts. My long-term goal is to build tools and experiences that empower artistic 
+                expression through technology — whether that&apos;s through audio software, immersive interfaces, or other creative tools.
+              </p>
+              <p>
+                In the meantime, I&apos;m developing creative personal projects, brushing up on DSP and audio programming, and looking to collaborate with others 
+                who share a passion for merging code, creativity, and culture. I&apos;ll be blogging about my experiences and thoughts on this journey here on 
+                this site. Feel free to follow along if you&apos;d like, and I&apos;m always open to chatting about new projects or ideas and meeting new people, 
+                especially other creatives and technologists (or both)!
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Projects Section - Right - Scrollable on desktop */}
+        <section className="flex flex-col lg:overflow-hidden lg:min-h-0">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6 flex-shrink-0">Projects</h2>
+          <div className="flex-1 lg:overflow-y-auto lg:scrollbar-thin lg:pr-2 lg:-mr-2">
+            <div className="space-y-6">
+              {projects.length > 0 ? (
+                projects.map((project) => (
+                  <PostCard key={project.slug} post={project} basePath="/projects" />
+                ))
+              ) : (
+                <p className="text-muted-foreground">No projects yet. Check back soon!</p>
+              )}
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

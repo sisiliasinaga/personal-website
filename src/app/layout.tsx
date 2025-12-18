@@ -12,13 +12,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className="scrollbar-thin">
+      <body className="bg-gradient-soft lg:h-screen lg:overflow-hidden">
         <Navbar />
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {children}
-      </main>
-    </body>
-  </html>
+        <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 lg:h-full">
+          {children}
+        </main>
+      </body>
+    </html>
   );
 }
