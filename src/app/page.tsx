@@ -1,6 +1,6 @@
 import { getAllPostsMeta } from '@/lib/posts';
 import PostCard from '@/components/PostCard';
-import { Github, Linkedin, Music2 } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 export const dynamic = 'force-static';
 
