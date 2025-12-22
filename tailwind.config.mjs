@@ -112,6 +112,17 @@ export default {
               },
             },
           },
+          invert: {
+            css: {
+              a: {
+                color: '#38bdf8',
+                '&:hover': {
+                  color: '#0ea5e9',
+                  textDecoration: 'underline',
+                },
+              },
+            },
+          },
         },
       },
     },

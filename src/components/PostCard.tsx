@@ -9,10 +9,10 @@ type PostCardProps = {
 
 export default function PostCard({ post, basePath }: PostCardProps) {
     return (
-        <article className="group glass-card rounded-xl p-6 border border-primary-100/50 hover:border-primary-400 hover:shadow-card-hover hover:shadow-glow transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+        <article className="group glass-card rounded-xl p-6 border border-primary-100/50 dark:border-primary-800/50 hover:border-primary-400 dark:hover:border-primary-500 hover:shadow-card-hover hover:shadow-glow transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
             {/* Background layers */}
-            <div className="absolute inset-0 bg-gradient-card rounded-xl" />
-            <div className="absolute inset-0 bg-primary-100/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
+            <div className="absolute inset-0 bg-gradient-card dark:bg-gradient-to-br dark:from-slate-800/90 dark:to-slate-900/90 rounded-xl" />
+            <div className="absolute inset-0 bg-primary-100/70 dark:bg-primary-800/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
             
             {/* Content */}
             <div className="relative z-10">
@@ -26,18 +26,18 @@ export default function PostCard({ post, basePath }: PostCardProps) {
                                 className="object-cover group-hover:scale-110 transition-transform duration-500"
                                 sizes="(max-width: 768px) 100vw, 800px"
                             />
-                            <div className="absolute inset-0 bg-gradient-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="absolute inset-0 bg-gradient-overlay dark:bg-gradient-to-b dark:from-transparent dark:to-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         </div>
                     </Link>
                 )}
 
                 <h2 className="text-2xl font-semibold mb-2">
-                    <Link href={`${basePath}/${post.slug}`} className="text-gray-800 group-hover:text-primary-600 transition-colors duration-200">
+                    <Link href={`${basePath}/${post.slug}`} className="text-gray-800 dark:text-gray-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-200">
                         {post.title}
                     </Link>
                 </h2>
 
-                <p className="text-sm text-gray-500 mb-3 group-hover:text-gray-600 transition-colors duration-200">
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-3 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-200">
                     {post.date && new Date(post.date).toLocaleDateString('en-US', { 
                         year: 'numeric', 
                         month: 'long', 
@@ -46,7 +46,7 @@ export default function PostCard({ post, basePath }: PostCardProps) {
                 </p>
 
                 {post.excerpt && (
-                    <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-200">
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors duration-200">
                         {post.excerpt}
                     </p>
                 )}

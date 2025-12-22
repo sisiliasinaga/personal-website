@@ -13,10 +13,10 @@ export default function AboutPage() {
                     <Linkedin className="w-5 h-5" />
                     <span>LinkedIn</span>
                 </a>
-                <a href="https://soundcloud.com/yourusername" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
+                {/* <a href="https://soundcloud.com/yourusername" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary">
                     <Music2 className="w-5 h-5" />
                     <span>SoundCloud</span>
-                </a>
+                </a> */}
             </div>
             <p>
                 Hi! I&apos;m Sisilia — a technologist and creative with roots in computer science, mathematics, and the arts. I&apos;m passionate about 
@@ -28,7 +28,7 @@ export default function AboutPage() {
                 Assistive & Rehabilitation Robotics Laboratory (argallab)</a> under Professor <a href="https://www.argallab.northwestern.edu/people/brenna/" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">
                 Brenna Argall</a>. My work focused on using machine learning and statistical methods along with developing software for robotic 
                 systems to improve the lives of stroke patients and patients with spinal cord injuries. You can learn more about one of the projects I contributed to <a 
-                href="https://arxiv.org/pdf/2203.10704" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">here</a>, which I also presented at the 2022 International Conference on Rehabilitation Robotics (ICORR). 
+                href="https://arxiv.org/pdf/2203.10704" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">here</a>, which I also presented at the 2022 International Conference on Rehabilitation Robotics (ICORR) in Rotterdam, Netherlands. 
             </p>
             <p>
                 After college, I worked as a software engineer at Microsoft under Mixed Reality, where I was part of the development team for the 
@@ -38,21 +38,25 @@ export default function AboutPage() {
                 Conference in Orlando, FL, where I helped lead a workshop on introductory game design for extended reality (XR).
             </p>
             <p>
+                Currently, I am a founding engineer at a startup called InZone, a social media platform dedicated to creating a healthier and more sustainable social media ecosystem for Gen Z. 
+                As a founding engineer, I lead design and development of the 3D avatar system, which is a key component of the platform. While the avatar system is still in development,
+                the app itself is live and in use by the public - check it out on the App Store and Google Play Store!
+            </p>
+            <p>
                 Creativity and the arts have always been core to who I am. I started playing the violin when I was 4 years old and continued to play in 
                 orchestras and ensembles throughout my life. While I don&apos;t currently play music professionally, I still enjoy writing and producing music 
                 in my free time and writing very enthusiastic reviews about new releases and albums I like (you can read a few of these here). I also enjoy dancing, 
-                which I only started getting into during my time in college, and I&apos;m currently a member of <a 
-                href="https://www.instagram.com/newagetheatrics/?hl=en" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">New Age Theatrics</a>, a performing arts dance company located in the bay area. Check 
-                out our <a href="https://www.youtube.com/watch?v=ORIN3kuINkQ&pp=ygURbmV3IGFnZSB0aGVhdHJpY3M%3D" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">recent first-place set at World of Dance 
+                which I only started getting into during my time in college, and I was also a member of <a 
+                href="https://www.instagram.com/newagetheatrics/?hl=en" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">New Age Theatrics</a>, a performing arts dance company located in the Bay Area. Check 
+                out our <a href="https://www.youtube.com/watch?v=ORIN3kuINkQ&pp=ygURbmV3IGFnZSB0aGVhdHJpY3M%3D" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors" target="_blank" rel="noopener noreferrer">first-place set at World of Dance 
                 Bay Area 2025</a>!
             </p>
             <p>
                 While I&apos;ve always loved pursuing my creative passions on the side, I always knew I wanted to do something more with these 
                 interests, which has led me to my current goal of exploring music technology and computational arts in a deeper, more research-driven way. 
-                Following a recent layoff from Microsoft, I&apos;m currently seeking new job opportunities (please reach out if you have any leads!) — but more 
-                importantly, I&apos;m also using this time to reconnect with my interdisciplinary interests in music, code, and interaction. I&apos;m actively preparing 
-                to apply to PhD programs in music technology and computational arts. My long-term goal is to build tools and experiences that empower artistic 
-                expression through technology — whether that&apos;s through audio software, immersive interfaces, or other creative tools.
+                I&apos;m now trying to reconnect with my interdisciplinary interests in music, code, and interaction by exploring music technology and computational arts in a deeper, more research-driven way. I&apos;m actively preparing 
+                for a PhD program in media arts and music technology. My long-term goal is to build tools and experiences that empower artistic 
+                expression and musical performance through technology — whether that&apos;s through audio software, immersive interfaces, or other creative tools.
             </p>
             <p>
                 In the meantime, I&apos;m developing creative personal projects, brushing up on DSP and audio programming, and looking to collaborate with others 

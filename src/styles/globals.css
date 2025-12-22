@@ -22,8 +22,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0f172a;
+    --foreground: #f1f5f9;
+    --primary-50: #0c1220;
+    --primary-100: #1e293b;
+    --primary-200: #334155;
+    --primary-500: #38bdf8;
   }
 }
 
@@ -42,11 +46,25 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
   
+  @media (prefers-color-scheme: dark) {
+    .glass {
+      background: rgba(30, 41, 59, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+    }
+  }
+  
   .glass-strong {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .glass-strong {
+      background: rgba(30, 41, 59, 0.85);
+      border: 1px solid rgba(148, 163, 184, 0.3);
+    }
   }
   
   .glass-blue {
@@ -56,10 +74,23 @@ body {
     border: 1px solid rgba(224, 242, 254, 0.3);
   }
   
+  @media (prefers-color-scheme: dark) {
+    .glass-blue {
+      background: rgba(30, 58, 138, 0.4);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+  }
+  
   .glass-card {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .glass-card {
+      background: rgba(30, 41, 59, 0.8);
+    }
   }
 }
 
@@ -77,6 +108,12 @@ body {
     scrollbar-color: rgba(14, 165, 233, 0.3) transparent;
   }
   
+  @media (prefers-color-scheme: dark) {
+    .scrollbar-thin {
+      scrollbar-color: rgba(56, 189, 248, 0.4) transparent;
+    }
+  }
+  
   .scrollbar-thin::-webkit-scrollbar {
     width: 6px;
   }
@@ -90,8 +127,20 @@ body {
     border-radius: 3px;
   }
   
+  @media (prefers-color-scheme: dark) {
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background-color: rgba(56, 189, 248, 0.4);
+    }
+  }
+  
   .scrollbar-thin::-webkit-scrollbar-thumb:hover {
     background-color: rgba(14, 165, 233, 0.5);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(56, 189, 248, 0.6);
+    }
   }
 }
 
@@ -101,6 +150,14 @@ body {
     background: linear-gradient(-45deg, #ffffff, #f0f9ff, #e0f2fe, #bae6fd);
     background-size: 400% 400%;
     animation: gradientShift 15s ease infinite;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .bg-gradient-animated {
+      background: linear-gradient(-45deg, #0f172a, #1e293b, #334155, #1e3a8a);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+    }
   }
 }
 

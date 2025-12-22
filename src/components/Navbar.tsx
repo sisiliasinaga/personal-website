@@ -30,8 +30,8 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 w-full px-6 py-4 transition-all duration-300 ${
       scrolled 
-        ? 'glass-strong shadow-soft border-b border-primary-100/30' 
-        : 'bg-white/80 backdrop-blur-sm border-b border-primary-100/20'
+        ? 'glass-strong shadow-soft border-b border-primary-100/30 dark:border-primary-800/30' 
+        : 'bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-primary-100/20 dark:border-primary-800/20'
     }`}>
       <div className="max-w-4xl mx-auto flex items-center justify-between">
         {/* Logo */}
@@ -49,8 +49,8 @@ export default function Navbar() {
                 href={link.href} 
                 className={`relative px-2 py-1 text-sm font-medium transition-colors duration-200 ${
                   isActive 
-                    ? 'text-primary-600' 
-                    : 'text-gray-700 hover:text-primary-500'
+                    ? 'text-primary-600 dark:text-primary-400' 
+                    : 'text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400'
                 }`}
               >
                 {link.label}
@@ -65,7 +65,7 @@ export default function Navbar() {
         {/* Mobile Menu Toggle Button */}
         <button 
           onClick={toggleMenu} 
-          className="block md:hidden p-2 hover:bg-primary-50 rounded-lg transition-all duration-200 text-gray-700 hover:text-primary-600"
+          className="block md:hidden p-2 hover:bg-primary-50 dark:hover:bg-primary-900/30 rounded-lg transition-all duration-200 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
           aria-label="Toggle navigation menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -85,8 +85,8 @@ export default function Navbar() {
                 href={link.href}
                 className={`block text-lg px-2 py-2 rounded-lg transition-all duration-200 ${
                   isActive 
-                    ? 'text-primary-600 bg-primary-50 font-semibold' 
-                    : 'text-gray-700 hover:text-primary-500 hover:bg-primary-50/50'
+                    ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/30 font-semibold' 
+                    : 'text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 hover:bg-primary-50/50 dark:hover:bg-primary-900/20'
                 }`}
                 onClick={closeMenu}
               >
