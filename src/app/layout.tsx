@@ -13,9 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scrollbar-thin">
-      <body className="bg-gradient-soft dark:bg-gradient-to-br dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 lg:h-screen lg:overflow-hidden">
+      <body className="bg-gradient-soft dark:bg-gradient-to-br dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
         <Navbar />
-        <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 lg:h-full">
+        <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-24">
           {children}
         </main>
       </body>

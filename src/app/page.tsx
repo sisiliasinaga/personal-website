@@ -8,7 +8,7 @@ export default async function Home() {
   const projects = getAllPostsMeta();
 
   return (
-    <div className="flex flex-col lg:h-[calc(100vh-8rem)] lg:min-h-0">
+    <div className="flex flex-col lg:h-[calc(100vh-6rem)] lg:min-h-0 lg:overflow-hidden">
       {/* Hero Section */}
       <section className="flex-shrink-0 space-y-8 animate-fade-in-up mb-8">
         <div className="space-y-4">
